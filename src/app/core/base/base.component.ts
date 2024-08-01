@@ -7,7 +7,7 @@ import * as ENDPOINTS from '../constants/apis-list';
 import * as CONSTANT_LIST from '../constants/constant-list';
 import { LocalStorageService, SharedDataService, HttpService } from '../services';
 import { ToastService } from '../services/toast.service';
-import { ConfirmationDialogService } from '../shared/dialogs/confirmation-modal/confirmation-modal.servicets';
+
 
 
 
@@ -24,7 +24,7 @@ export abstract class BaseComponent  {
   public localStorageService: LocalStorageService;
   public modalService: NgbModal;
   public router: Router;
-  public confirmationdialogservice: ConfirmationDialogService
+
 
   /**
    * the following is used to keep the page id based on for edit/detail/view screen
@@ -40,7 +40,7 @@ export abstract class BaseComponent  {
     this.httpService = injector.get(HttpService);
     this.sharedDataService = injector.get(SharedDataService);
     this.localStorageService = injector.get(LocalStorageService);
-    this.confirmationdialogservice= injector.get(ConfirmationDialogService)
+
   }
 
 
